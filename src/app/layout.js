@@ -24,9 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" className="dark-theme">
-          <Theme>{children}</Theme>
-        </ThemeProvider>
+        <Theme>{children}</Theme>
       </body>
     </html>
   );
