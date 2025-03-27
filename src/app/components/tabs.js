@@ -28,39 +28,18 @@ const InformationTabs = () => (
     </Tabs.List>
     <Tabs.Content className="grow rounded-b-md p-5" value="tab1">
       <p className="mb-5 text-[15px] leading-normal text-mauve11">
-        Make changes to your account here. Click save when you're done.
+        I am a web developer with expertise in building websites and web
+        applications, ranging from simple business websites to full-scale
+        web-based applications. I specialize in the MERN stack, leveraging
+        Next.js for optimized performance and Redis for efficient data caching.
       </p>
-      <fieldset className="mb-[15px] flex w-full flex-col justify-start">
-        <label
-          className="mb-2.5 block text-[13px] leading-none text-violet12"
-          htmlFor="name"
-        >
-          Name
-        </label>
-        <input
-          className="h-[35px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
-          id="name"
-          defaultValue="Pedro Duarte"
-        />
-      </fieldset>
-      <fieldset className="mb-[15px] flex w-full flex-col justify-start">
-        <label
-          className="mb-2.5 block text-[13px] leading-none text-violet12"
-          htmlFor="username"
-        >
-          Username
-        </label>
-        <input
-          className="h-[35px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
-          id="username"
-          defaultValue="@peduarte"
-        />
-      </fieldset>
-      <div className="mt-5 flex justify-end">
-        <button className="inline-flex h-[35px] cursor-default items-center justify-center rounded bg-green4 px-[15px] text-[15px] font-medium leading-none text-green11 outline-none hover:bg-green5 focus:shadow-[0_0_0_2px] focus:shadow-green7">
-          Save changes
-        </button>
-      </div>
+      <p className="mb-5 text-[15px] leading-normal text-mauve11">
+        With a focus on clean, scalable, and high-performance solutions, I
+        ensure that every project meets modern web standards while delivering
+        seamless user experiences. Whether it's a dynamic web app or a business
+        site, I bring efficiency and reliability to the digital space. Let's
+        build something great together! 🚀
+      </p>
     </Tabs.Content>
     <Tabs.Content className="grow rounded-b-md p-5" value="tab2">
       <p className="mb-5 text-[15px] leading-normal text-mauve11">
