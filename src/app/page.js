@@ -1,68 +1,66 @@
+"use client";
 import Image from "next/image";
 import photo from "../../public/photo.jpg";
 import InformationTabs from "./components/tabs";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Box, Card, Flex, Heading, Text } from "@radix-ui/themes";
 
 export default function Home() {
   return (
     <div className="grid xl:w-full lg:w-full sm:w-full max-w-[650px] mx-auto grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="rounded-full"
-          src={photo}
-          alt="Photo"
-          width={150}
-          height={150}
-          priority
-        />
+        <Box maxWidth="240px" className="w-full">
+          <Card
+            className="flex flex-col items-center justify-center gap-3"
+            padding="4"
+            radius="8"
+            shadow="2"
+            width="100%"
+          >
+            <Flex
+              gap="3"
+              align="center"
+              className="flex flex-col items-center justify-center"
+            >
+              <Image
+                src={photo}
+                alt="Jayson Lauza"
+                width={100}
+                height={100}
+                className="rounded-full"
+              />
+              <Box className="flex flex-col items-center justify-center">
+                <Heading as="h1" size="6">
+                  Jayson Lauza
+                </Heading>
+                <Text as="div" size="2" color="gray">
+                  Web Developer | Software Developer
+                </Text>
+              </Box>
+            </Flex>
+          </Card>
+        </Box>
 
-        <p>Test</p>
         <InformationTabs />
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/jlauza"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          <GitHubLogoIcon />
+          <span className="hidden sm:inline">GitHub</span>
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.linkedin.com/in/jayson-lauza-a4441948/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+          <LinkedInLogoIcon />
+          <span className="hidden sm:inline">LinkedIn</span>
         </a>
       </footer>
     </div>

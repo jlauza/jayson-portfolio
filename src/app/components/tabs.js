@@ -47,7 +47,7 @@ const InformationTabs = () => {
             the digital space
           </p>
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
-            Let&apos;s build something great together!
+            Let&apos;s build something great together! 🚀
           </p>
 
           <Flex gap="2" className="flex flex-row">
