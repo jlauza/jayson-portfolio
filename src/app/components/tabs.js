@@ -42,12 +42,12 @@ const InformationTabs = () => {
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
             With a focus on clean, scalable, and high-performance solutions, I
             ensure that every project meets modern web standards while
-            delivering seamless user experiences. Whether it's a dynamic web app
-            or a business site, I bring efficiency and reliability to the
-            digital space
+            delivering seamless user experiences. Whether it&apos;s a dynamic
+            web app or a business site, I bring efficiency and reliability to
+            the digital space
           </p>
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
-            Let's build something great together!
+            Let&apos;s build something great together!
           </p>
 
           <Flex gap="2" className="flex flex-row">
@@ -112,7 +112,7 @@ const InformationTabs = () => {
         </Tabs.Content>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab2">
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
-            Change your password here. After saving, you'll be logged out.
+            Change your password here. After saving, you&apos;ll be logged out.
           </p>
           <fieldset className="mb-[15px] flex w-full flex-col justify-start">
             <label
@@ -161,7 +161,7 @@ const InformationTabs = () => {
         </Tabs.Content>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab3">
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
-            Change your password here. After saving, you'll be logged out.
+            Change your password here. After saving, you&apos;ll be logged out.
           </p>
           <fieldset className="mb-[15px] flex w-full flex-col justify-start">
             <label
