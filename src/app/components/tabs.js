@@ -1,5 +1,8 @@
+"use client";
 import * as React from "react";
 import { Tabs } from "radix-ui";
+import { Flex, Heading, Badge } from "@radix-ui/themes";
+import { Chip } from "@mui/material";
 
 const InformationTabs = () => (
   <Tabs.Root className="flex w-full flex-col" defaultValue="tab1">
@@ -37,9 +40,71 @@ const InformationTabs = () => (
         With a focus on clean, scalable, and high-performance solutions, I
         ensure that every project meets modern web standards while delivering
         seamless user experiences. Whether it's a dynamic web app or a business
-        site, I bring efficiency and reliability to the digital space. Let's
-        build something great together! 🚀
+        site, I bring efficiency and reliability to the digital space
       </p>
+      <p className="mb-5 text-[15px] leading-normal text-mauve11">
+        Let's build something great together! 🚀
+      </p>
+
+      <Flex gap="2" className="flex flex-row">
+        <Heading>Skills:</Heading>{" "}
+        <Chip
+          label="Node"
+          color="primary"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+        <Chip
+          label="MongoDB"
+          color="secondary"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+        <Chip
+          label="Express"
+          color="warning"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+        <Chip
+          label="React"
+          color="info"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+        <Chip
+          label="NextJS"
+          color="warning"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+        <Chip
+          label="Redis"
+          color="error"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+        <Chip
+          label="SQL"
+          color="success"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+        <Chip
+          label="PHP"
+          color="secondary"
+          size="small"
+          className="ml-2"
+          variant="outlined"
+        />
+      </Flex>
     </Tabs.Content>
     <Tabs.Content className="grow rounded-b-md p-5" value="tab2">
       <p className="mb-5 text-[15px] leading-normal text-mauve11">
