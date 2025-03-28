@@ -7,7 +7,10 @@ import { Chip } from "@mui/material";
 const InformationTabs = () => {
   return (
     <>
-      <Tabs.Root className="flex w-full flex-col" defaultValue="tab1">
+      <Tabs.Root
+        className="flex w-full min-w-[300px] max-w-[650px] self-center flex-col"
+        defaultValue="tab1"
+      >
         <Tabs.List
           className="flex shrink-0 border-b border-mauve6"
           aria-label="Manage your account"
@@ -16,19 +19,25 @@ const InformationTabs = () => {
             className="flex h-[45px] flex-1 cursor-default select-none items-center justify-center px-5 text-[15px] leading-none text-gray-300 outline-none first:rounded-tl-md last:rounded-tr-md hover:text-blue-400 data-[state=active]:text-blue-400 data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0] data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px] data-[state=active]:focus:shadow-blue-500"
             value="tab1"
           >
-            About Me
+            About
           </Tabs.Trigger>
           <Tabs.Trigger
             className="flex h-[45px] flex-1 cursor-default select-none items-center justify-center px-5 text-[15px] leading-none text-gray-300 outline-none first:rounded-tl-md last:rounded-tr-md hover:text-blue-400 data-[state=active]:text-blue-400 data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0] data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px] data-[state=active]:focus:shadow-blue-500"
             value="tab2"
           >
-            My Projects
+            Projects
           </Tabs.Trigger>
           <Tabs.Trigger
             className="flex h-[45px] flex-1 cursor-default select-none items-center justify-center px-5 text-[15px] leading-none text-gray-300 outline-none first:rounded-tl-md last:rounded-tr-md hover:text-blue-400 data-[state=active]:text-blue-400 data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0] data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px] data-[state=active]:focus:shadow-blue-500"
             value="tab3"
           >
-            Contact Me
+            Feedback
+          </Tabs.Trigger>
+          <Tabs.Trigger
+            className="flex h-[45px] flex-1 cursor-default select-none items-center justify-center px-5 text-[15px] leading-none text-gray-300 outline-none first:rounded-tl-md last:rounded-tr-md hover:text-blue-400 data-[state=active]:text-blue-400 data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0] data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px] data-[state=active]:focus:shadow-blue-500"
+            value="tab4"
+          >
+            Contact
           </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab1">
@@ -90,20 +99,6 @@ const InformationTabs = () => {
             <Chip
               label="Redis"
               color="error"
-              size="small"
-              className="ml-2"
-              variant="outlined"
-            />
-            <Chip
-              label="SQL"
-              color="success"
-              size="small"
-              className="ml-2"
-              variant="outlined"
-            />
-            <Chip
-              label="PHP"
-              color="secondary"
               size="small"
               className="ml-2"
               variant="outlined"
@@ -185,6 +180,11 @@ const InformationTabs = () => {
           </div>
         </Tabs.Content>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab3">
+          <p className="mb-5 text-[15px] leading-normal text-mauve11 text-center">
+            Coming soon.
+          </p>
+        </Tabs.Content>
+        <Tabs.Content className="grow rounded-b-md p-5" value="tab4">
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
             Change your password here. After saving, you&apos;ll be logged out.
           </p>
