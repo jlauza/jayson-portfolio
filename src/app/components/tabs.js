@@ -109,6 +109,31 @@ const InformationTabs = () => {
               variant="outlined"
             />
           </Flex>
+
+          <Flex gap="2" className="flex flex-row mt-5">
+            Rate: $20/hour
+            <Chip
+              label="Available"
+              color="success"
+              size="small"
+              className="ml-2"
+              variant="outlined"
+            />
+            <Chip
+              label="Remote"
+              color="primary"
+              size="small"
+              className="ml-2"
+              variant="outlined"
+            />
+            <Chip
+              label="Part-time"
+              color="secondary"
+              size="small"
+              className="ml-2"
+              variant="outlined"
+            />
+          </Flex>
         </Tabs.Content>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab2">
           <p className="mb-5 text-[15px] leading-normal text-mauve11">

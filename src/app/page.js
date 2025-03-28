@@ -4,6 +4,7 @@ import photo from "../../public/photo.jpg";
 import InformationTabs from "./components/tabs";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Box, Card, Flex, Heading, Text } from "@radix-ui/themes";
+import { Typography } from "@mui/material";
 
 export default function Home() {
   return (
@@ -29,10 +30,10 @@ export default function Home() {
                 height={100}
                 className="rounded-full"
               />
-              <Box className="flex flex-col items-center justify-center">
-                <Heading as="h1" size="6">
-                  Jayson Lauza
-                </Heading>
+              <Box className="flex flex-col items-center justify-center my-5">
+                <Typography variant="h4" fontWeight={700} className="lowercase">
+                  jayson lauza
+                </Typography>
                 <Text as="div" size="2" color="gray">
                   Web Developer | Software Developer
                 </Text>
