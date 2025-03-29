@@ -186,7 +186,7 @@ const InformationTabs = () => {
         </Tabs.Content>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab4">
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
-            Change your password here. After saving, you&apos;ll be logged out.
+            Got questions? Send me inquiries.
           </p>
           <fieldset className="mb-[15px] flex w-full flex-col justify-start">
             <label
@@ -197,34 +197,34 @@ const InformationTabs = () => {
             </label>
             <input
               className="h-[35px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
-              id="currentPassword"
-              type="password"
+              id="name"
+              type="name"
             />
           </fieldset>
           <fieldset className="mb-[15px] flex w-full flex-col justify-start">
             <label
               className="mb-2.5 block text-[13px] leading-none text-violet12"
-              htmlFor="newPassword"
+              htmlFor="email"
             >
               Email
             </label>
             <input
               className="h-[35px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
-              id="newPassword"
-              type="password"
+              id="email"
+              type="email"
             />
           </fieldset>
           <fieldset className="mb-[15px] flex w-full flex-col justify-start">
             <label
               className="mb-2.5 block text-[13px] leading-none text-violet12"
-              htmlFor="confirmPassword"
+              htmlFor="message"
             >
               Message
             </label>
             <textarea
               className="h-[85px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
-              id="confirmPassword"
-              type="password"
+              id="message"
+              type="message"
             />
           </fieldset>
           <div className="mt-5 flex justify-end">
