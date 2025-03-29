@@ -193,7 +193,7 @@ const InformationTabs = () => {
               className="mb-2.5 block text-[13px] leading-none text-violet12"
               htmlFor="currentPassword"
             >
-              Current password
+              Name
             </label>
             <input
               className="h-[35px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
@@ -206,7 +206,7 @@ const InformationTabs = () => {
               className="mb-2.5 block text-[13px] leading-none text-violet12"
               htmlFor="newPassword"
             >
-              New password
+              Email
             </label>
             <input
               className="h-[35px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
@@ -219,17 +219,17 @@ const InformationTabs = () => {
               className="mb-2.5 block text-[13px] leading-none text-violet12"
               htmlFor="confirmPassword"
             >
-              Confirm password
+              Message
             </label>
-            <input
-              className="h-[35px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
+            <textarea
+              className="h-[85px] shrink-0 grow rounded px-2.5 text-[15px] leading-none text-violet11 shadow-[0_0_0_1px] shadow-violet7 outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet8"
               id="confirmPassword"
               type="password"
             />
           </fieldset>
           <div className="mt-5 flex justify-end">
             <button className="inline-flex h-[35px] cursor-default items-center justify-center rounded bg-green4 px-[15px] text-[15px] font-medium leading-none text-green11 outline-none hover:bg-green5 focus:shadow-[0_0_0_2px] focus:shadow-green7">
-              Change password
+              Submit
             </button>
           </div>
         </Tabs.Content>
