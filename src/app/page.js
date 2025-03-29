@@ -8,7 +8,7 @@ import { Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <div className="grid xl:w-full lg:w-full sm:w-full max-w-[650px] mx-auto grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid xl:w-full lg:w-full sm:w-full max-w-[650px] mx-auto grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Box maxWidth="240px" className="w-full">
           <Card
