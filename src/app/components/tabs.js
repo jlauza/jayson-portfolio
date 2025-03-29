@@ -3,6 +3,7 @@ import * as React from "react";
 import { Tabs } from "radix-ui";
 import { Flex, Heading } from "@radix-ui/themes";
 import { Chip } from "@mui/material";
+import ClientFeedback from "./feedbacks";
 
 const InformationTabs = () => {
   return (
@@ -180,9 +181,14 @@ const InformationTabs = () => {
           </div>
         </Tabs.Content>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab3">
-          <p className="mb-5 text-[15px] leading-normal text-mauve11 text-center">
-            Coming soon.
-          </p>
+          <ClientFeedback
+            name="Jane Smith"
+            position="Marketing Manager"
+            rating={4}
+            feedback="Amazing experience! The team delivered exactly what we needed."
+            image="https://randomuser.me/api/portraits/women/44.jpg"
+          />
+          {/* Add more component feedback here */}
         </Tabs.Content>
         <Tabs.Content className="grow rounded-b-md p-5" value="tab4">
           <p className="mb-5 text-[15px] leading-normal text-mauve11">
