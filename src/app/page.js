@@ -8,7 +8,7 @@ import { Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <div className="grid xl:w-full lg:w-full sm:w-full max-w-[650px] mx-auto grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid w-full max-w-[750px] mx-auto min-h-screen p-6 pb-16 gap-12 grid-rows-[20px_1fr_20px] sm:p-20 sm:gap-16 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Box maxWidth="240px" className="w-full">
           <Card
@@ -31,11 +31,20 @@ export default function Home() {
                 className="rounded-full"
               />
               <Box className="flex flex-col items-center justify-center my-5">
-                <Typography variant="h4" fontWeight={700} className="lowercase">
+                <Typography
+                  variant="h4"
+                  fontWeight={700}
+                  className="capitalize"
+                >
                   jayson lauza
                 </Typography>
-                <Text as="div" size="2" color="gray">
-                  Web Developer | Software Developer | Technical Support
+                <Text
+                  as="p"
+                  size="2"
+                  className="text-gray-600 dark:text-gray-400 text-center mt-1"
+                >
+                  Web Developer <br /> Software Developer <br /> Technical
+                  Support
                 </Text>
               </Box>
             </Flex>
