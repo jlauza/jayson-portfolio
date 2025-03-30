@@ -195,7 +195,12 @@ const InformationTabs = () => {
             />
           </fieldset>
           <div className="mt-5 flex justify-end">
-            <button className="inline-flex h-[35px] cursor-default items-center justify-center rounded bg-green4 px-[15px] text-[15px] font-medium leading-none text-green11 outline-none hover:bg-green5 focus:shadow-[0_0_0_2px] focus:shadow-green7">
+            <button
+              onClick={() => {
+                alert("Message sent!");
+              }}
+              className="inline-flex h-[35px] cursor-default items-center justify-center rounded bg-green4 px-[15px] text-[15px] font-medium leading-none text-green11 border-1 focus:border-0 hover:bg-green5 focus:shadow-[0_0_0_2px] focus:shadow-green7"
+            >
               Submit
             </button>
           </div>
