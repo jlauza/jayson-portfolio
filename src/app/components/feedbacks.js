@@ -11,7 +11,7 @@ export default function ClientFeedback({
   const totalStars = 5;
 
   return (
-    <div className="mx-auto w-full max-w-sm bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6 shadow-md transition-transform transform hover:scale-105">
+    <div className="mx-auto w-full max-w-sm rounded-lg p-6 shadow-md transition-transform transform hover:scale-105">
       {/* Avatar & Name */}
       <div className="flex items-center gap-4">
         <Avatar.Root className="w-12 h-12 rounded-full overflow-hidden border border-gray-300">

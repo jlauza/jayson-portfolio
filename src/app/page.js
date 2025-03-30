@@ -35,7 +35,7 @@ export default function Home() {
                   jayson lauza
                 </Typography>
                 <Text as="div" size="2" color="gray">
-                  Web Developer | Software Developer
+                  Web Developer | Software Developer | Technical Support
                 </Text>
               </Box>
             </Flex>
