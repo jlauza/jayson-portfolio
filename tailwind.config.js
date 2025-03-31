@@ -18,6 +18,9 @@ module.exports = {
         linkedin: "#0a66c2",
         facebook: "#4267B2",
         workos: "#1E3A8A",
+        green4: "#34d399", // Adjust colors for Radix compatibility
+        green5: "#10b981",
+        green7: "#065f46",
       },
     },
   },

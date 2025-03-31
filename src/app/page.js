@@ -5,6 +5,7 @@ import InformationTabs from "./components/tabs";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Box, Card, Flex, Heading, Text } from "@radix-ui/themes";
 import { Typography } from "@mui/material";
+import ThemeSwitch from "./components/theme-switch";
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
           <LinkedInLogoIcon />
           <span className="hidden sm:inline">LinkedIn</span>
         </a>
+        <ThemeSwitch />
       </footer>
     </div>
   );
