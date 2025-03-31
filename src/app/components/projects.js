@@ -1,5 +1,3 @@
-import { Chip } from "@mui/material";
-
 export default function ProjectCard({
   name,
   authors,
