@@ -21,13 +21,9 @@ export default function ProjectCard({
 
         {/* Project Details (Right Side) */}
         <div className="w-3/5 p-6 flex flex-col justify-center">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {name || "Project Name"}
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            {authors || "Author Name"}
-          </p>
-          <p className="mt-2 text-gray-700 dark:text-gray-300">
+          <h3 className="text-lg font-semibold">{name || "Project Name"}</h3>
+          <p className="text-sm">{authors || "Author Name"}</p>
+          <p className="mt-2">
             {description || "A brief description of the project goes here."}
           </p>
 

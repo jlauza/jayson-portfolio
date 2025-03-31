@@ -38,11 +38,7 @@ export default function Home() {
                 >
                   jayson lauza
                 </Typography>
-                <Text
-                  as="p"
-                  size="2"
-                  className="text-gray-600 dark:text-gray-400 text-center mt-1"
-                >
+                <Text as="p" size="2" className="text-center mt-1">
                   Web Developer <br /> Software Developer <br /> Technical
                   Support
                 </Text>

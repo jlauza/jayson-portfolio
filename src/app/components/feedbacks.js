@@ -20,18 +20,14 @@ export default function ClientFeedback({
             alt={name}
             className="w-full h-full object-cover"
           />
-          <Avatar.Fallback className="w-full h-full flex items-center justify-center bg-gray-300 text-gray-700 text-xl">
+          <Avatar.Fallback className="w-full h-full flex items-center justify-center bg-gray-300 text-xl">
             {name ? name.charAt(0) : "?"}
           </Avatar.Fallback>
         </Avatar.Root>
 
         <div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {name || "John Doe"}
-          </h3>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            {position || "CEO, TechCorp"}
-          </p>
+          <h3 className="text-lg font-semibold">{name || "John Doe"}</h3>
+          <p className="text-sm">{position || "CEO, TechCorp"}</p>
         </div>
       </div>
 
@@ -47,7 +43,7 @@ export default function ClientFeedback({
       </div>
 
       {/* Feedback Message */}
-      <p className="mt-4 text-gray-700 dark:text-gray-300">
+      <p className="mt-4">
         {feedback ||
           "This service has been exceptional! The team went above and beyond to meet our needs. Highly recommended!"}
       </p>
