@@ -44,7 +44,7 @@ export async function POST(req, res) {
 
     // Setup email data
     let mailOptions = {
-      from: `"Pro Dance Suite" <${email_from}>`, // sender address
+      from: `"My Portfolio - " <${email_from}>`, // sender address
       to: to, // list of receivers
       subject: subject, // Subject line
       text: message, // plain text body
@@ -55,7 +55,7 @@ export async function POST(req, res) {
 
     return new Response(
       JSON.stringify({
-        message: "Verify email sent successfully",
+        message: "Message sent successfully",
         data: info,
       }),
       {
@@ -66,7 +66,7 @@ export async function POST(req, res) {
   } catch (error) {
     console.error(error);
     return new Response(
-      JSON.stringify({ error: "Failed to send verification email." }),
+      JSON.stringify({ error: "Failed to send email message." }),
       {
         headers: { "Content-Type": "application/json" },
         status: 500,
