@@ -9,7 +9,7 @@ export default function ProjectCard({
 }) {
   return (
     <>
-      <div className="mx-auto w-full max-w-lg rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 flex">
+      <div className="mx-auto w-full max-w-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 flex">
         {/* Project Image (Left Side) */}
         <div className="w-2/5">
           <img
