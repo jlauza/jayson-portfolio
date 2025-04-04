@@ -25,10 +25,18 @@ export default function ThemeSwitch() {
 
   return (
     <div className="flex items-center gap-2">
-      <SunIcon className="w-5 h-5 text-yellow-500 dark:text-gray-400" />
+      <SunIcon
+        className={`w-5 h-5 text-yellow-500  ${
+          darkMode === false ? "dark:text-yellow-300" : "dark:text-gray-400"
+        }`}
+      />
       <Switch checked={darkMode} onChange={handleChange} />
 
-      <MoonIcon className="w-5 h-5 text-gray-600 dark:text-yellow-300" />
+      <MoonIcon
+        className={`w-5 h-5 text-yellow-500  ${
+          darkMode === true ? "dark:text-yellow-300" : "dark:text-gray-400"
+        }`}
+      />
     </div>
   );
 }
