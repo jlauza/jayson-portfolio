@@ -61,7 +61,7 @@ const InformationTabs = () => {
             Let&apos;s build something great together! 🚀
           </p>
 
-          <Flex gap="2" className="flex flex-row">
+          <Flex gap="2" className="flex flex-row overflow-x-wrap">
             <Heading>Skills:</Heading>{" "}
             <Chip
               label="Node"
@@ -101,6 +101,20 @@ const InformationTabs = () => {
             <Chip
               label="Redis"
               color="error"
+              size="small"
+              className="ml-2"
+              variant="outlined"
+            />
+            <Chip
+              label="PHP"
+              color="primary"
+              size="small"
+              className="ml-2"
+              variant="outlined"
+            />
+            <Chip
+              label="SQL"
+              color="warning"
               size="small"
               className="ml-2"
               variant="outlined"
