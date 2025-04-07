@@ -69,7 +69,7 @@ export default function Home() {
           <LinkedInLogoIcon />
           <span className="hidden sm:inline">LinkedIn</span>
         </a>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
       </footer>
     </div>
   );
