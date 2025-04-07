@@ -36,9 +36,14 @@ export async function POST(req, res) {
             },
           }
         : {
-            host: "smtp.sendgrid.net",
-            port: 587,
-            auth: { user: "apikey", pass: process.env.SENDGRID_API_KEY },
+            // host: "smtp.sendgrid.net",
+            // port: 587,
+            // auth: { user: "apikey", pass: process.env.SENDGRID_API_KEY },
+            service: "gmail",
+            auth: {
+              user: process.env.GMAIL_USER, // your Gmail address
+              pass: process.env.GMAIL_PASS, // your app password (not Gmail password)
+            },
           }
     );
 
