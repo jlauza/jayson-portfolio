@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import Switch from "@mui/material/Switch";
 
 export default function ThemeSwitch() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const handleChange = (event) => {
     const state = event.target.checked;
     console.log(state);
 
     if (state) {
-      // document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
       // localStorage.setItem("theme", "light");
       console.log("Dark mode");
       setDarkMode(state);
@@ -31,7 +31,6 @@ export default function ThemeSwitch() {
         }`}
       />
       <Switch checked={darkMode} onChange={handleChange} />
-
       <MoonIcon
         className={`w-5 h-5 text-yellow-500  ${
           darkMode === true ? "dark:text-yellow-300" : "dark:text-gray-400"
